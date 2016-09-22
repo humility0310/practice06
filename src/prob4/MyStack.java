@@ -36,7 +36,7 @@ public class MyStack implements Stack {
 
 	@Override
 	public String pop() throws MyStackException {
-		if (this.top == 0) {
+		if (isEmpty()) {
 			this.isEmpty();
 			throw new MyStackException(": stack is empty");
 		}
@@ -58,6 +58,9 @@ public class MyStack implements Stack {
 
 	@Override
 	public boolean isEmpty() {
+		if(this.top == 0){
+			return true;
+		}
 		return false;
 	}
 
