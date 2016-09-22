@@ -1,4 +1,4 @@
-package prob4;
+package prob4;//익셉션까지 같이해야함.(MyStack클래스 에서 메소드와 매개변수 구현)-> 익셉션 메세지 수정
 
 public class MainApp {
 
@@ -11,7 +11,7 @@ public class MainApp {
 			stack.push("java");
 			stack.push(".");
 
-			while (!stack.isEmpty()) {
+			while (!stack.isEmpty() == false) {
 				System.out.println(stack.pop());
 			}
 
@@ -22,9 +22,9 @@ public class MainApp {
 
 			System.out.println(stack.pop());
 			System.out.println(stack.pop());
-			
+
 		} catch (MyStackException ex) {
-			System.out.println( ex );
+			System.out.println(ex);
 		}
 	}
 }

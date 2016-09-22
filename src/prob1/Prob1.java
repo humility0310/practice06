@@ -8,6 +8,8 @@ public class Prob1 {
 		int intData2 = 150;
 				
 		/* 코드를 완성합니다. */
+		intData1 = Integer.parseInt(strData1);
+		strData2 = String.valueOf(intData2);
 				
 		System.out.println( "결과:" + intData1 + "," + strData2 );
 	}

@@ -1,4 +1,4 @@
-package prob2;
+package prob2;//생성자 만들고->실행결과 출력하게 손으로 toString오버라이딩 해보셈
 
 public class MemberTest {
 

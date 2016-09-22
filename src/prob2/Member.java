@@ -4,6 +4,11 @@ public class Member {
 	private String id;
 	private String name;
 	
+	public Member(String str1, String str2){
+		this.id = str1;
+		this.name = str2;
+	}
+	
 	public String getId() {
 		return id;
 	}
@@ -15,5 +20,9 @@ public class Member {
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+	@Override
+	public String toString(){
+		return id+": "+name;
 	}
 }
